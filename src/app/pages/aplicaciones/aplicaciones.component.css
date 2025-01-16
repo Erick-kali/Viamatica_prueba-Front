@@ -1,0 +1,86 @@
+/* Contenedor principal de usuarios */
+.usuarios-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px; /* Añade espacio interno para que los elementos no queden pegados al borde */
+    background-color: #f9f9f9; /* Color de fondo claro para mayor legibilidad */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil para destacar el contenedor */
+  }
+  
+  /* Formulario de usuario */
+  .usuario-form {
+    margin-bottom: 20px;
+    display: flex; /* Permite organizar los campos horizontal o verticalmente */
+    flex-wrap: wrap; /* Adapta los campos a diferentes tamaños de pantalla */
+    gap: 15px; /* Espaciado uniforme entre campos */
+  }
+  
+  /* Campo de filtro */
+  .filter-field {
+    margin: 20px 0;
+    width: 100%;
+    max-width: 400px; /* Evita que el campo sea excesivamente ancho */
+    padding: 10px; /* Espacio interno para facilitar la escritura */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente cómodo */
+  }
+  
+  /* Estilo general de tablas */
+  table {
+    width: 100%;
+    border-collapse: collapse; /* Elimina espacios entre celdas */
+    background-color: #ffffff; /* Fondo blanco */
+    border: 1px solid #ddd; /* Borde general de la tabla */
+  }
+  
+  table th, table td {
+    text-align: left;
+    padding: 12px; /* Espaciado interno uniforme */
+    border: 1px solid #ddd; /* Borde entre celdas */
+    font-size: 14px; /* Tamaño de fuente legible */
+  }
+  
+  /* Encabezados de la tabla */
+  table th {
+    background-color: #5C9DBF; /* Color de encabezado acorde a tu preferencia */
+    color: #ffffff; /* Texto blanco para contraste */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    font-weight: bold;
+  }
+  
+  /* Filas alternas de la tabla */
+  table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Color de fondo para filas pares */
+  }
+  
+  table tr:hover {
+    background-color: #e6f7ff; /* Color de fondo al pasar el cursor */
+  }
+  
+  /* Contenedor con scroll */
+  .container {
+    max-height: 400px; /* Ajustable según la necesidad */
+    overflow-y: auto; /* Habilita desplazamiento vertical */
+    border: 1px solid #ddd; /* Añade un borde alrededor */
+    border-radius: 4px; /* Bordes redondeados */
+  }
+  
+  /* Ajuste para dispositivos móviles */
+  @media (max-width: 768px) {
+    .usuarios-container {
+      padding: 10px; /* Reduce el espacio interno */
+    }
+  
+    .usuario-form {
+      flex-direction: column; /* Organiza los campos verticalmente */
+    }
+  
+    table th, table td {
+      padding: 10px; /* Reduce el espaciado interno */
+      font-size: 12px; /* Disminuye el tamaño de la fuente */
+    }
+  }
+  
+  

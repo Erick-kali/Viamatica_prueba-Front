@@ -1,0 +1,62 @@
+<div class="hold-transition login-page">
+  <div class="login-box animate__animated animate__backInLeft">
+    <div class="login-logo" style="margin-top: 20px;"> <!-- Añadí un margen superior para bajarlo -->
+      <a href="../../index2.html">
+        <b style="display: block; margin-bottom: 10px;">Gestor de licencias</b> <!-- Esto coloca "Gestor de licencias" en la parte superior -->
+        <span style="display: block; margin-top: 0;">Code Ec</span> <!-- Esto coloca "Code Ec" debajo con margen para separación -->
+      </a>
+    </div>
+    <!-- /.login-logo -->
+    <div class="card">
+      <div class="card-body login-card-body">
+        <p class="login-box-msg">Iniciar sesión aquí</p>
+
+        <form (ngSubmit)="onSubmit()">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Usuario" name="usuario" [(ngModel)]="usuario">
+            <div class="input-group-append">
+              <div class="input-group-text">
+                <span class="fas fa-envelope" style="color: rgb(48, 37, 37);"></span>
+              </div>
+            </div>
+          </div>
+          <div class="input-group mb-3">
+            <input type="password" class="form-control" placeholder="Password" name="pass" [(ngModel)]="pass">
+            <div class="input-group-append">
+              <div class="input-group-text">
+                <span class="fas fa-lock" style="color: rgb(48, 37, 37);"></span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-8">
+              <div class="icheck-primary">
+                <input type="checkbox" id="remember">
+                <label for="remember" class="ml-2">
+                  Recordarme
+                </label>
+              </div>
+            </div>
+            <!-- /.col -->
+            <div class="col-4">
+              <button type="submit" class="btn btn-outline-secondary btn-block">Sign In</button>
+            </div>
+            <!-- /.col -->
+          </div>
+        </form>
+
+        <div class="social-auth-links text-center mb-3" id="my-signin2">
+
+        </div>
+        <!-- /.social-auth-links -->
+
+        <p class="mb-1">
+          <a href="forgot-password.html" class="link-pass"> Recuperar mi clave </a>
+        </p>
+        <!-- Eliminado el enlace para registrar nuevo usuario -->
+      </div>
+      <!-- /.login-card-body -->
+    </div>
+  </div>
+  <!-- /.login-box -->
+</div>
